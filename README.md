@@ -24,6 +24,7 @@ conda activate ada-df
 # install dependencies
 conda install pytorch==1.12.0 torchvision==0.13.0 cudatoolkit=10.2 -c pytorch
 pip install timm
+pip install tqdm
 ~~~
 
 **Note: Other versions of dependencies may be compatible either.**
