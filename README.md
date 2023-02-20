@@ -36,7 +36,7 @@ We do not provide FER datasets in our repository. Please download the datasets y
 - Download the [AffectNet](http://mohammadmahoor.com/affectnet/) dataset and extract the `affectnet` dir to `./datasets`. 
 - Download the [SFEW](https://cs.anu.edu.au/few/AFEW.html) dataset and extract the `sfew` dir to `./datasets`. 
 
-**Note: Except for the RAF-DB dataset, all other datasets do not provide aligned facial images. We have aligned all facial images via [MTCNN](https://github.com/serengil/deepface). You can not achieve similar results without facial alignment.**
+**Note: Except for the RAF-DB dataset, all other datasets do not provide aligned facial images. We have aligned all facial images via [MTCNN](https://github.com/serengil/deepface).**
 
 ### Pre-trained backbone
 
@@ -75,5 +75,3 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'sfew' --data_path './datasets/
 Our Ada-DF outperforms the previous work with 90.04%, 65.34%, and 60.46% on RAF-DB, AffectNet, and SFEW.
 
 ![](https://raw.githubusercontent.com/taylor-xy0827/images/main/202302201843576.png)
-
-**Note: We perform each experiment five times using different random seeds to obtain the mean accuracy. So it is common to get a higher or lower accuracy in your experiment.**
