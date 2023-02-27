@@ -37,6 +37,8 @@ We do not provide FER datasets in our repository. Please download the datasets y
 - Download the [AffectNet](http://mohammadmahoor.com/affectnet/) dataset and extract the `affectnet` dir to `./datasets`. 
 - Download the [SFEW](https://cs.anu.edu.au/few/AFEW.html) dataset and extract the `sfew` dir to `./datasets`. 
 
+For detailed `./datasets` structure please refer to [README](https://github.com/taylor-xy0827/Ada-DF/tree/main/datasets).
+
 **Note: Except for the RAF-DB dataset, all other datasets do not provide aligned facial images. We have aligned all facial images via [MTCNN](https://github.com/serengil/deepface).**
 
 ### Pre-trained backbone
