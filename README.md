@@ -23,8 +23,9 @@ conda activate ada-df
 
 # install dependencies
 conda install pytorch==1.12.0 torchvision==0.13.0 cudatoolkit=10.2 -c pytorch
+pip install pandas
 pip install timm
-pip install tqdm
+pip install tensorboard
 ~~~
 
 **Note: Other versions of dependencies may be compatible either.**
@@ -37,7 +38,7 @@ We do not provide FER datasets in our repository. Please download the datasets y
 - Download the [AffectNet](http://mohammadmahoor.com/affectnet/) dataset and extract the `affectnet` dir to `./datasets`. 
 - Download the [SFEW](https://cs.anu.edu.au/few/AFEW.html) dataset and extract the `sfew` dir to `./datasets`. 
 
-For detailed `./datasets` structure please refer to [README](https://github.com/taylor-xy0827/Ada-DF/tree/main/datasets).
+Please refer to [README](https://github.com/taylor-xy0827/Ada-DF/tree/main/datasets) for detailed folder structure of `./datasets`.
 
 **Note: Except for the RAF-DB dataset, all other datasets do not provide aligned facial images. We have aligned all facial images via [MTCNN](https://github.com/serengil/deepface).**
 
@@ -58,13 +59,13 @@ conda activate ada-df
 For the RAF-DB dataset, run:
 
 ~~~bash
-CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'raf' --data_path '.datasets/raf-basic/' --batch_size 64 --num_classes 7 --threshold 0.7 --beta 3 --max_weight 1.0 --min_weight 0.2
+CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'raf' --data_path './datasets/raf-basic/' --batch_size 64 --num_classes 7 --threshold 0.7 --beta 3 --max_weight 1.0 --min_weight 0.2
 ~~~
 
 For the AffectNet-7 dataset, run:
 
 ~~~bash
-CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'affectnet7' --data_path '.datasets/affectnet/' --batch_size 64 --num_classes 7 --threshold 0.5 --beta 5 --max_weight 1.0 --min_weight 0.2
+CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'affectnet7' --data_path './datasets/affectnet/' --batch_size 64 --num_classes 7 --threshold 0.5 --beta 5 --max_weight 1.0 --min_weight 0.2
 ~~~
 
 For the SFEW dataset, run:
