@@ -105,6 +105,25 @@ class AffectDataset_7label(Dataset):
         self.file_paths = self.file_paths[idxs].tolist()
         self.label = self.label[idxs].tolist()
 
+    def get_df(self):
+        train_path = os.path.join(self.aff_path, 'train_set/')
+        val_path = os.path.join(self.aff_path, 'val_set/')
+        data = []
+        
+        for anno in glob.glob(train_path + 'annotations/*_exp.npy'):
+            idx = os.path.basename(anno).split('_')[0]
+            img_path = os.path.join(train_path, f'images/{idx}.jpg')
+            label = int(np.load(anno))
+            data.append(['train', img_path, label])
+        
+        for anno in glob.glob(val_path + 'annotations/*_exp.npy'):
+            idx = os.path.basename(anno).split('_')[0]
+            img_path = os.path.join(val_path, f'images/{idx}.jpg')
+            label = int(np.load(anno))
+            data.append(['val', img_path, label])
+        
+        return pd.DataFrame(data = data,columns = ['phase', 'img_path', 'label'])
+        
     def __len__(self):
         return len(self.file_paths)
 
