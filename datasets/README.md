@@ -9,7 +9,8 @@ datasets
 │   ├── train_set
 │   │   └── images
 │   └── val_set
-│       └── images
+│   │   └── images
+│   └── affectnet.csv
 └── sfew
     ├── Train
     │   ├── Angry
