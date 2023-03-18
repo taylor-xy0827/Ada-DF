@@ -37,7 +37,7 @@ parser.add_argument('--margin_1', default=0.07, type=float)
 parser.add_argument('--seed', default=None, type=int)
 parser.add_argument('--dataset', default='raf', type=str)
 parser.add_argument('--data_path', default='./datasets/raf-basic', type=str)
-parser.add_argument('--num_workers', default=24, type=int)
+parser.add_argument('--num_workers', default=16, type=int)
 parser.add_argument('--device_id', default=0, type=int)
 
 args = parser.parse_args()
