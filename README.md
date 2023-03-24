@@ -1,6 +1,6 @@
 # Ada-DF
 
-This repository is the official implementation of the ICASSP 2023 paper *A Dual-branch Adaptive Distribution Fusion Framework For Real-world Facial Expression Recognition*.
+This repository is the official implementation of the ICASSP 2023 paper *A Dual-branch Adaptive Distribution Fusion Framework for Real-world Facial Expression Recognition*.
 
 ## Abstract
 
@@ -79,3 +79,17 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'sfew' --data_path './datasets/
 Our Ada-DF outperforms the previous work with 90.04%, 65.34%, and 60.46% on RAF-DB, AffectNet, and SFEW.
 
 ![](https://raw.githubusercontent.com/taylor-xy0827/images/main/202302201843576.png)
+
+## Citation
+
+If you find our code useful, please consider citing our paper:
+
+```shell
+@inproceedings{jiang2022cs,
+  title={A Dual-branch Adaptive Distribution Fusion Framework for Real-world Facial Expression Recognition},
+  author={Liu, Shu and Xu, Yan and Wan, Tongming and Kui, Xiaoyan},
+  booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={20223},
+  organization={IEEE}
+}
+```
