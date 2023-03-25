@@ -85,11 +85,11 @@ Our Ada-DF outperforms the previous work with 90.04%, 65.34%, and 60.46% on RAF-
 If you find our code useful, please consider citing our paper:
 
 ```shell
-@inproceedings{jiang2022cs,
+@inproceedings{liu2023a,
   title={A Dual-branch Adaptive Distribution Fusion Framework for Real-world Facial Expression Recognition},
   author={Liu, Shu and Xu, Yan and Wan, Tongming and Kui, Xiaoyan},
   booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  year={20223},
+  year={2023},
   organization={IEEE}
 }
 ```
