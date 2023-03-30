@@ -78,7 +78,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset 'sfew' --data_path './datasets/
 
 Our Ada-DF outperforms the previous work with 90.04%, 65.34%, and 60.46% on RAF-DB, AffectNet, and SFEW.
 
-![](https://raw.githubusercontent.com/taylor-xy0827/images/main/202302201843576.png)
+![image.png](https://raw.githubusercontent.com/taylor-xy0827/images/main/202303302206744.png)
 
 ## Citation
 
