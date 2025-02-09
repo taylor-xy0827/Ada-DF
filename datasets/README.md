@@ -1,4 +1,4 @@
-The `datasets` folder should be strctured as follows:
+The `datasets` folder should be structured as follows:
 ```
 datasets
 ├── raf-basic
