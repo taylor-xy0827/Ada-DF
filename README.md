@@ -35,7 +35,7 @@ pip install tensorboard
 We do not provide FER datasets in our repository. Please download the datasets yourselves:
 
 - Download the [RAF-DB](http://www.whdeng.cn/raf/model1.html) dataset and extract the `raf-basic` dir to `./datasets`. 
-- Download the [AffectNet](http://mohammadmahoor.com/affectnet/) dataset and extract the `affectnet` dir to `./datasets`. 
+- Download the [AffectNet](https://mohammadmahoor.com/pages/databases/affectnet/) dataset and extract the `affectnet` dir to `./datasets`. 
 - Download the [SFEW](https://cs.anu.edu.au/few/AFEW.html) dataset and extract the `sfew` dir to `./datasets`. 
 
 Please refer to [README](https://github.com/taylor-xy0827/Ada-DF/tree/main/datasets) for detailed folder structure of `./datasets`.
